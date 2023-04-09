@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ExercitaRecife</string>
+    <string name="username_hint">Usuário</string>
+    <string name="password_hint">Senha</string>
+    <string name="back_to_login">Voltar para o Login</string>
+    <string name="Login">Login</string>
+    <string name="register">Register</string>
+    <string name="exercita_recife">Exercita Recife</string>
+    <string name="cardiovascular_exercises">Exercícios Cardiovasculares</string>
+    <string name="jump_rope">Pular corda</string>
+    <string name="_15_minutes">15 minutos</string>
+    <string name="light_walk">Caminhada leve</string>
+    <string name="_20_minutes">20 minutos</string>
+    <string name="climb_stairs">Subir escadas</string>
+    <string name="bicycle">Bicicleta</string>
+    <string name="_30_minutes">30 minutos</string>
+    <string name="choose_a_maximum_of_2_per_day">Escolha no máximo 2 por dia</string>
+    <string name="exercises_for_upper_limbs">Exercícios para superiores</string>
+    <string name="exercises_for_lower_limbs">Exercícios para inferiores</string>
+    <string name="push_ups">Flexão de braços</string>
+    <string name="abdominal">Abdominal</string>
+    <string name="bench_triceps">Triceps no banco</string>
+    <string name="squat">Agachamento</string>
+    <string name="sink">Afundo</string>
+    <string name="burpee">Burpee</string>
+    <string name="squat_with_isometry">Agachamento com isometria</string>
+    <string name="_3x_10_reps">3x 10 repetições</string>
+    <string name="_3x_20_reps">3x 20 repetições</string>
+    <string name="_3x_30_secs">3x 30 segundos</string>
+    <string name="cardiovascular">Cardiovascular</string>
+    <string name="bodybuilding">Musculação</string>
+
+
+</resources>

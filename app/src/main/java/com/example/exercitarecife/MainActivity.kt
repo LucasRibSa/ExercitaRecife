@@ -2,30 +2,38 @@ package com.example.exercitarecife
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import com.example.exercitarecife.databinding.ActivityMainBinding
 
 
 
 class MainActivity : AppCompatActivity() {
-    class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_main)
+        val username = binding.editTextUsername
+        val password = binding.editTextPassword
+        val buttonRegister = binding.buttonRegister
+        val buttonLogin = binding.buttonLogin
 
-            val buttonRegister = findViewById<Button>(R.id.buttonRegister)
-            val buttonLogin = findViewById<Button>(R.id.buttonLogin)
-
-            buttonLogin.setOnClickListener {
+        buttonLogin.setOnClickListener {
+            if (username.text.toString() == "Lucas" && password.text.toString() == "123") {
                 val intent = Intent(this, MenuActivity::class.java)
+                val login = username.text.toString()
+                val senha = password.text.toString()
+                intent.putExtra("login", login)
+                intent.putExtra("senha", senha)
                 startActivity(intent)
-                finish()
             }
-            buttonRegister.setOnClickListener {
-                val intent = Intent(this, RegisterActivity::class.java)
-                startActivity(intent)
-                finish()
+                buttonRegister.setOnClickListener {
+                    val intent = Intent(this, RegisterActivity::class.java)
+                    startActivity(intent)
+                    finish()
+
             }
         }
     }
 }
+

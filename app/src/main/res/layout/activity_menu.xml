@@ -15,7 +15,7 @@
         android:src="@drawable/logo" />
 
     <Button
-        android:id="@+id/CardiovascularButton"
+        android:id="@+id/cardiovascularButton"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/bodybuildingButton"

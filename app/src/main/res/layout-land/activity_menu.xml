@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="93dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/cardiovascularButton"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bodybuildingButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="197dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/cardiovascular" />
+
+    <Button
+        android:id="@+id/bodybuildingButton"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="197dp"
+        android:layout_marginTop="118dp"
+        android:text="@string/bodybuilding" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="312dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/exercita_recife"
+        android:textAlignment="center"
+        android:textColor="#0F4563"
+        android:textSize="36sp" />
+
+</RelativeLayout>

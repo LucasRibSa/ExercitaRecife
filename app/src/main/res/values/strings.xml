@@ -29,4 +29,5 @@
     <string name="_3x_30_secs">3x 30 secs</string>
     <string name="cardiovascular">Cardiovascular</string>
     <string name="bodybuilding">Bodybuilding</string>
+    <string name="msgError">User error</string>
 </resources>

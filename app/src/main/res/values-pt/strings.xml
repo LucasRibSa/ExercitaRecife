@@ -30,6 +30,7 @@
     <string name="_3x_30_secs">3x 30 segundos</string>
     <string name="cardiovascular">Cardiovascular</string>
     <string name="bodybuilding">Musculação</string>
+    <string name="msgError">Usuário Errado</string>
 
 
 </resources>

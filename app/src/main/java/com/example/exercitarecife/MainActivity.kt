@@ -3,6 +3,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.exercitarecife.databinding.ActivityMainBinding
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -13,11 +14,18 @@ class MainActivity : AppCompatActivity() {
 
         val buttonRegister = binding.buttonRegister
         val buttonLogin = binding.buttonLogin
+        val nomeLogin = binding.nameLogin
 
         buttonLogin.setOnClickListener {
-
-            val intent = Intent(this, MenuActivity::class.java)
-            startActivity(intent)
+            if (nomeLogin?.text.toString()=="Lucas") {
+                val intent = Intent(this, MenuActivity::class.java)
+                val nome = nomeLogin?.text.toString()
+                intent.putExtra("nome", nome)
+                startActivity(intent)
+            }
+            else{
+                Toast.makeText(this, R.string.msgError, Toast.LENGTH_SHORT).show()
+            }
         }
         buttonRegister.setOnClickListener {
                     val intent = Intent(this, RegisterActivity::class.java)

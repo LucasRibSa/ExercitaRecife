@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.exercitarecife.databinding.ActivityMainBinding
 import android.widget.Toast
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -17,6 +19,12 @@ class MainActivity : AppCompatActivity() {
         val nomeLogin = binding.nameLogin
 
         buttonLogin.setOnClickListener {
+            /// teste do banco
+            val database = Firebase.database
+            val myRef = database.getReference("message")
+            myRef.setValue("Hello, World!")
+            //teste banco
+
             if (nomeLogin?.text.toString()=="Lucas") {
                 val intent = Intent(this, MenuActivity::class.java)
                 val nome = nomeLogin?.text.toString()

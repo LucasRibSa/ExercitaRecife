@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "252488183540",
+    "project_id": "exercitarecife",
+    "storage_bucket": "exercitarecife.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252488183540:android:bc0f1ef0445d1242dab8a1",
+        "android_client_info": {
+          "package_name": "com.example.exercitarecife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252488183540-7el87ki0029h0buhlb4ndvbrhjgo0juo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqS8Wkwgo8ntayT8o3H6o7wkUgw2-9EL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252488183540-7el87ki0029h0buhlb4ndvbrhjgo0juo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -31,6 +31,5 @@
     <string name="cardiovascular">Cardiovascular</string>
     <string name="bodybuilding">Musculação</string>
     <string name="msgError">Usuário Errado</string>
-
-
+    <string name="hint_usuario">Usuario</string>
 </resources>

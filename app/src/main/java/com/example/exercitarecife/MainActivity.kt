@@ -19,11 +19,9 @@ class MainActivity : AppCompatActivity() {
         val nomeLogin = binding.nameLogin
 
         buttonLogin.setOnClickListener {
-            /// teste do banco
             val database = Firebase.database
             val myRef = database.getReference("message")
             myRef.setValue("Hello, World!")
-            //teste banco
 
             if (nomeLogin?.text.toString()=="Lucas") {
                 val intent = Intent(this, MenuActivity::class.java)

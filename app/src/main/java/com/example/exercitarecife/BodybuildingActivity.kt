@@ -11,6 +11,7 @@ class BodybuildingActivity : AppCompatActivity() {
         binding = ActivityBodybuildingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         val imageHome = binding.imageViewhome
         imageHome.setOnClickListener {
             val intent = Intent(this, MenuActivity::class.java)

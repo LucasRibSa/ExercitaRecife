@@ -1,51 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/blue">
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/containerTop"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></View>
+
+    <View
+        android:id="@+id/containerMiddle"
+        android:layout_width="850dp"
+        android:layout_height="50dp"
+        android:background="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerTop">
+
+    </View>
+
+    <View
+        android:id="@+id/containerButton"
+        android:layout_width="850dp"
+        android:layout_height="270dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/bodybuildingButton"
+        app:layout_constraintTop_toTopOf="@+id/imageView"></View>
 
     <ImageView
-        android:id="@+id/imageViewLogo"
-        android:layout_width="93dp"
-        android:layout_height="55dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="323dp"
-        android:layout_marginTop="-26dp"
-        android:src="@drawable/logo" />
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/telaexercitarecife"
+        app:layout_constraintBottom_toBottomOf="@id/containerTop"
+        app:layout_constraintEnd_toEndOf="@id/containerTop"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/containerTop"
+        app:layout_constraintTop_toTopOf="@id/containerTop"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="124dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="348dp"
+        android:src="@drawable/logoexercitarecife"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerMiddle">
+
+    </ImageView>
 
     <Button
         android:id="@+id/cardiovascularButton"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="389dp"
-        android:layout_marginTop="153dp"
-        android:text="@string/cardiovascular" />
+        android:layout_width="850dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bodybuildingButton"
+        android:layout_marginTop="4dp"
+        android:text="@string/cardiovascular"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bodybuildingButton" />
 
     <Button
         android:id="@+id/bodybuildingButton"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="113dp"
-        android:layout_marginTop="82dp"
-        android:text="@string/bodybuilding" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="312dp"
-        android:layout_height="66dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="214dp"
-        android:layout_marginTop="6dp"
-        android:text="@string/exercita_recife"
-        android:textAlignment="center"
-        android:textColor="#0F4563"
-        android:textSize="26sp" />
+        android:layout_width="850dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/bodybuilding"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/msgUsuario"
@@ -53,20 +84,25 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="403dp"
-        android:layout_marginTop="109dp"
+        android:layout_marginStart="432dp"
+        android:layout_marginTop="12dp"
         android:text="nome"
-        android:textSize="20sp" />
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerTop" />
 
     <TextView
         android:id="@+id/textView27"
         android:layout_width="146dp"
         android:layout_height="44dp"
-        android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="266dp"
-        android:layout_marginTop="38dp"
-        android:text="Bem vindo(a):"
-        android:textSize="20sp" />
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="12dp"
+        android:text="Bem vindo:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerTop" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
